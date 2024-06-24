@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lê Quốc Anh</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        figure {
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: pink;
+      }
+      .container {
+        background-color: white;
+        max-width: 500px;
+        margin: 12px auto;
+        padding: 12px;
+      }
 
-        }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+      }
+      #header-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gird-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 12px 0;
+      }
+      .gird-container h3 {
+        text-align: center;
+      }
+      .food-img {
+        display: flex;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <section class="container">
+      <div>
+        <h1>Trưa nay Oppa ăn gì?</h1>
+        <figure id="header-image">
+          <img src="2d6274213eb306e8852347482da1310b.gif" alt="Gif ăn uống" />
+        </figure>
+      </div>
+
+      <div class="gird-container">
         <div>
-            <h1>Trưa nay ăn gì</h1>
-            <figure>
-                <img src="2d6274213eb306e8852347482da1310b.gif" alt="Gif ăn uống">
-            </figure>
+          <h3>Thông tin bữa ăn hôm nay</h3>
+          <p></p>
         </div>
+        <figure class="food-img">
+          <img
+            src="2d6274213eb306e8852347482da1310b.gif"
+            width="100%"
+            alt="Hình đồ ăn"
+          />
+        </figure>
+      </div>
+
+      <div class="gird-container">
+        <figure class="food-img">
+          <img src="full.gif" width="100%" alt="Hình đồ ăn" />
+        </figure>
         <div>
-            <img src="2d6274213eb306e8852347482da1310b" alt="Hình đồ ăn">
-            <!-- <p>Hôm nay Oppa ăn cơm dới ... , Em pé check in anh coai coai</p> -->
+          <h3>No cành hong</h3>
+          <p style="padding: 0 12px">
+            Anh no qué chùng rầu. Em pé check-in đồ ăn đê. Ăn no chiều ráng Call
+            API thành công nghe rùi chuẩn bị dìa cty bên này mần ㅋㅋㅋ
+          </p>
         </div>
+      </div>
+      <figure class="food-img">
+        <img src="AW3304507_10.gif" width="100%" alt="Hình đồ ăn" />
+      </figure>
     </section>
-</body>
+  </body>
 </html>
